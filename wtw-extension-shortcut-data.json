@@ -1,81 +1,81 @@
 {
   "heading": "Welcome to WTW Shortcuts",
   "description": "Here you can find quick links to various resources.",
-  "roles": ["All", "Product", "Scrum", "Manager", "Lead", "Developer", "Tester", "DevOps"],
+  "availableRoles": ["All", "Product", "Scrum", "Manager", "Lead", "Developer", "Tester", "DevOps"],
   "shortcuts": [{
       "title": "Shortcuts 1",
-      "role": ["All"],
+      "roles": ["All"],
       "description": "Open the WTW website in a new tab.",
       "list": [{
           "name": "Dashboard - Jira",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://im-jira.internal.towerswatson.com/secure/Dashboard.jspa?selectPageId=67488"
         },
         {
           "name": "Jira Sign Off - Jira",
-          "role": ["Product", "Scrum", "Manager", "Lead"],
+          "roles": ["Product", "Scrum", "Manager", "Lead"],
           "url": "https://im-jira.internal.towerswatson.com/secure/Dashboard.jspa?selectPageId=72303"
         },
         {
           "name": "wtw-accounts Github",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://github.com/orgs/wtw-accounts/repositories?type=all"
         },
         {
           "name": "HRMS",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://hrms.internal.towerswatson.com/adrenalin/iEngine/MyZolog.aspx"
         }
       ]
     },
     {
       "title": "Shortcuts 2",
-      "role": ["All"],
+      "roles": ["All"],
       "description": "Open the WTW website in a new tab.",
       "list": [{
           "name": "Members Allocation",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://im-kb.internal.towerswatson.com/pages/viewpage.action?pageId=1132416008"
         },
         {
           "name": "Effort Log - JIRA",
-          "role": ["Developer"],
+          "roles": ["Developer"],
           "url": "https://im-kb.internal.towerswatson.com/display/IPP/Effort+Logging+in+JIRA"
         },
         {
           "name": "Jenkins",
-          "role": ["DevOps"],
+          "roles": ["DevOps"],
           "url": "https://saj-jenkins.acclariscorp.com/job/JBoss_EAP7/job/Angular/job/Angular_Dev/"
         },
         {
           "name": "HR Cloud",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://eedu.fa.em3.oraclecloud.com/fscmUI/faces/FuseWelcome?_afrLoop=31562184666064283&_afrWindowMode=0&_afrWindowId=null&_adf.ctrl-state=11ibf106zc_1&_afrFS=16&_afrMT=screen&_afrMFW=1536&_afrMFH=730&_afrMFDW=1536&_afrMFDH=864&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=120&_afrMFG=0&_afrMFS=0&_afrMFO=0"
         }
       ]
     },
     {
       "title": "Shortcuts 3",
-      "role": ["All"],
+      "roles": ["All"],
       "description": "Open the WTW website in a new tab.",
       "list": [{
           "name": "Members Allocation",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://im-kb.internal.towerswatson.com/pages/viewpage.action?pageId=1132416008"
         },
         {
           "name": "Effort Log - JIRA",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://im-kb.internal.towerswatson.com/display/IPP/Effort+Logging+in+JIRA"
         },
         {
           "name": "Jenkins",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://saj-jenkins.acclariscorp.com/job/JBoss_EAP7/job/Angular/job/Angular_Dev/"
         },
         {
           "name": "HR Cloud",
-          "role": ["All"],
+          "roles": ["All"],
           "url": "https://eedu.fa.em3.oraclecloud.com/fscmUI/faces/FuseWelcome?_afrLoop=31562184666064283&_afrWindowMode=0&_afrWindowId=null&_adf.ctrl-state=11ibf106zc_1&_afrFS=16&_afrMT=screen&_afrMFW=1536&_afrMFH=730&_afrMFDW=1536&_afrMFDH=864&_afrMFC=8&_afrMFCI=0&_afrMFM=0&_afrMFR=120&_afrMFG=0&_afrMFS=0&_afrMFO=0"
         }
       ]
