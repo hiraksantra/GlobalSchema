@@ -1,0 +1,104 @@
+{
+    "description": "This is a custom config file.",
+    "proxyConfig": {
+        "appServerBasePath": "https://localhost",
+        "proxyServerPort": "3000",
+        "urlMap": {
+            "local": {
+                "restApiBaseLink": "http://localhost:8080/acclaim",
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
+            },
+            "dev": {
+                "restApiBaseLink": "https://ent-dev.participantportal.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
+            },
+            "uat": {
+                "restApiBaseLink": "https://ent-uat.participantportal.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
+            },
+            "client": {
+                "restApiBaseLink": "https://client-uat.participantportal.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
+            },
+            "stg": {
+                "restApiBaseLink": "https://ent-stg.participantportal.com/acclaim",
+                "microServiceApiBaseLink": "https://ashstgmploigext.participantportal.com"
+            },
+            "stgEus": {
+                "restApiBaseLink": "https://eus-stg.viabenefitsaccounts.com/acclaim",
+                "microServiceApiBaseLink": "https://ashstgmploigext.participantportal.com"
+            },
+            "sts": {
+                "restApiBaseLink": "https://ent-sts.participantportal.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
+            },
+            "sbx": {
+                "restApiBaseLink": "https://ent-sbx.participantportal.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
+            },
+            "prod": {
+                "restApiBaseLink": "https://www.viabenefitsaccounts.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-ashprdmploigext.participantportal.com"
+            },
+            "prodEus": {
+                "restApiBaseLink": "https://eus.viabenefitsaccounts.com/acclaim",
+                "microServiceApiBaseLink": "https://oci-ashprdmploigext.participantportal.com"
+            }
+        },
+        "microService": {
+            "headers": {
+                "authorization": "Authorization",
+                "contentTypeKey": "Content-Type",
+                "contentTypeValue": "application/json",
+                "xApiKey": "x-api-key"
+            }
+        },
+        "domainList": [
+            "http://localhost:8080/acclaim",
+            "https://www.viabenefitsaccounts.com/acclaim",
+            "https://sajdevenltpx01.acclariscorp.com/acclaim",
+            "https://ent-dev.participantportal.com/acclaim",
+            "https://intra-entdev.participantportal.com/acclaim",
+            "https://ent-uat.participantportal.com/acclaim",
+            "https://ent-sts.participantportal.com/acclaim",
+            "https://client-uat.participantportal.com/acclaim",
+            "https://ent-stg.participantportal.com/acclaim",
+            "https://ent-sbx.participantportal.com/acclaim",
+            "https://eus-stg.viabenefitsaccounts.com/acclaim",
+            "https://dev-mobile-ig.participantportal.com",
+            "https://mobile-ig.participantportal.com",
+            "https://oci-sajnopmploigext.participantportal.com",
+            "https://ashstgmploigext.participantportal.com",
+            "https://oci-ashprdmploigext.participantportal.com"
+        ]
+    },
+    "proxyRootFolder": "/local-proxy",
+    "apiDataConfig": {
+        "autoSaveApiAsMock": false,
+        "shouldMock": true,
+        "mockConfigJson": "/api-data/api-mock-data-config.json",
+        "shouldFilterRequest": false,
+        "requestFilterConfigJson": "/api-data/api-request-filters-config.json",
+        "shouldFilterResponse": true,
+        "proxyPageFolder": "proxy-portal-login-pages",
+        "responseFilterConfigJson": "/api-data/api-response-filters-config.json",
+        "urlReplacer": [
+            {
+                "replaceUrl": "/web/v0/public/login/loginToPortal",
+                "replaceBy": "/web/v0/public/login/loginToLocal",
+                "objectKeyInFile": "loginCredential",
+                "replaceRequestBodyByFilePath": "/PortalUserLoginInfo.json"
+            },
+            {
+                "replaceUrl": "/dev/api/authentication/accessPortal",
+                "replaceBy": "/web/v0/public/login/loginToLocal",
+                "replaceByIsARest": true,
+                "objectKeyInFile": "loginCredential",
+                "replaceRequestBodyByFilePath": "/PortalUserLoginInfo.json"
+            }
+        ] 
+    },
+    "interceptorData": {
+        "entryPoint": "/API.Interceptor.js"
+    }
+}
