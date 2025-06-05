@@ -81,6 +81,19 @@
         "requestFilterConfigJson": "/api-data/api-request-filters-config.json",
         "shouldFilterResponse": true,
         "proxyPageFolder": "proxy-portal-login-pages",
+        "proxyPageApiCall": {
+            "redirectTo": "appServerBasePath",
+            "list": [
+                {
+                    "url": "/web/v0/public/configuration",
+                    "method": "GET"
+                },
+                {
+                    "url": "/dev/api/authentication/accessPortal",
+                    "method": "POST"
+                }
+            ]
+        },
         "responseFilterConfigJson": "/api-data/api-response-filters-config.json",
         "urlReplacer": [
             {
