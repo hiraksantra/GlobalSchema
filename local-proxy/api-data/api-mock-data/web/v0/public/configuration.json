@@ -1,0 +1,24 @@
+{
+    "fullstory": null,
+    "apm": null,
+    "links": [
+        {
+            "rel": "LOGIN.URL",
+            "href": "https://ent-dev.participantportal.com/acclaim/web/v0/public/login/loginToPortal?_y_=6104605855ac988be34d1c733de21617e40be364e61d03b4590943514cbb5b4f6cd62079f927b74f8bc4b1de907773af17ccb778e9421ef0d9f370b505ec7ce245e276a87bfe8b01ae7eddd284fc18739f320cf0f1be711a08a83e432c57dad5977ea54708b1cc544c279c9ea41b857a2c94b81583dbfadc7d6358d460b56e4203a6bd809feeeb500fe22c9d168e4e5d6751923d69c1217f630dad9872e5434c",
+            "method": "POST",
+            "seq": null
+        },
+        {
+            "rel": "SESSION_KEEP_ALIVE.URL",
+            "href": "https://ent-dev.participantportal.com/acclaim/web/v0/public/adminKeepAlive?_y_=b265882036fa6b5ef1819d38824ee0100de4e3718eb7de7050fc5767a6dea470f6ed739b451a777d1f7f85db6180dffd02bc39d8c9af872d2cf363391ceeaec4cd598ff28fbf3c0d07145f8026e377844ceee0c7b1499e8712c30ba2fb3aa21dbd3d95f18e17fcbb",
+            "method": "GET",
+            "seq": null
+        },
+        {
+            "rel": "LOGIN.MS.URL",
+            "href": "https://oci-sajnopmploigext.participantportal.com/dev/api/authentication/accessPortal?_y_=6104605855ac988be34d1c733de2161779077d1b90be97a1b9433db551308572d5b0462d44ac14a5dd8bba0a586c4f7e2b35c7ff45c5bfd7d9f370b505ec7ce245e276a87bfe8b01984d61ea165afd9bbe259c2773605764f72894996f46df441c2226644b00e89c67814ba547a25598ba55d705963291bc0d36156574eca478b81eeb03877faf60354d099ea84f47f04e06206611cbcd1023f3c9b555d17c9e076cfa0940135f61eba82705ba3ceec7",
+            "method": "POST",
+            "seq": null
+        }
+    ]
+}

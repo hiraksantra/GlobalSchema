@@ -1,0 +1,13 @@
+{
+    "folder": "/api-data/api-response-filters",
+    "responseFilterList": [
+        {
+            "shouldFilter": false,
+            "serviceMatchPath": "/web/v0/public/login/login"
+        },
+        {
+            "shouldFilter": false,
+            "serviceMatchPath": "/dev/api/alertnotification/getAlertsAndNotifications"
+        }
+    ]
+}

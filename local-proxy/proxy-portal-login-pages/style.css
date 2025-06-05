@@ -1,0 +1,66 @@
+a {
+  color: #640c65;
+}
+
+body,
+button[type="submit"] {
+  background-color: #640c65;
+}
+
+button[type="submit"]:hover {
+  background-color: #530954;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  background-color: #fff;
+  border: 2px solid #640c65 !important;
+  color: black;
+}
+
+#login-form-section {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #e5d8e0;
+  width: 400px;
+  position: relative;
+}
+
+#api-loader {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#api-loader>div {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+#api-loader>div.loader-image {
+  margin: 0 auto;
+  border: 10px solid #ffffff;
+  border-top: 10px solid #2980ba;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

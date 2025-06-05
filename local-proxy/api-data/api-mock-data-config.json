@@ -1,0 +1,10 @@
+{
+    "folder": "/api-data/api-mock-data",
+    "mockList": [
+        {
+            "shouldMock": true,
+            "httpStatusCode": 200,
+            "serviceMatchPath": "/web/v0/public/configuration"
+        }
+    ]
+}

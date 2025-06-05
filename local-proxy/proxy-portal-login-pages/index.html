@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>Portal React Login</title>
+  <link rel="stylesheet" href="./bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-4" id="req-res-section">
+      <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow" id="login-form-section">
+          <h3 class="mb-4">Portal3.0 Login</h3>
+          <form onsubmit="redirectWithToken(event)">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="text" class="form-control" id="password" placeholder="Password" required value="local123">
+            </div>
+            <div class="form-group">
+              <label for="password">Login API</label>
+              <select class="form-control" id="api" placeholder="API" required>
+                <option value="MS" selected>MS</option>
+                <option value="REST">REST</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="page-redirection">Page Redirection</label>
+              <select class="form-control" id="page-redirection" placeholder="Page Redirection" required>
+                <option value="hsa-fsa-contribution-calculator" selected>hsa-fsa-contribution-calculator</option>
+                <option value="hsa-fsa-tax-savings-calculator">hsa-fsa-tax-savings-calculator</option>
+                <option value="hsa-maximum-contribution-calculator">hsa-maximum-contribution-calculator</option>
+                <option value="hsa-savings-calculator">hsa-savings-calculator</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Need Portal Doc?</label>
+              <a class="float-right" href="https://kb.extendhealth.com/pages/viewpage.action?spaceKey=AP&title=Portal+Angular+Project" target="_blank">Click Here</a>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Redirect</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./ppls.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

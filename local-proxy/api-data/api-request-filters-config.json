@@ -1,0 +1,9 @@
+{
+    "folder": "/api-data/api-request-filters",
+    "requestFilterList": [
+        {
+            "shouldFilter": false,
+            "serviceMatchPath": "/web/v0/public/login/login"
+        }
+    ]
+}
