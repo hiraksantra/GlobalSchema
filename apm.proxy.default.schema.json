@@ -6,19 +6,19 @@
         "urlMap": {
             "local": {
                 "restApiBaseLink": "http://localhost:8080/acclaim",
-                "microServiceApiBaseLink": "https://np-app-gateway.participantportal.com"
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
             },
             "dev": {
                 "restApiBaseLink": "https://ent-dev.participantportal.com/acclaim",
-                "microServiceApiBaseLink": "https://np-app-gateway.participantportal.com"
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
             },
             "uat": {
                 "restApiBaseLink": "https://ent-uat.participantportal.com/acclaim",
-                "microServiceApiBaseLink": "https://np-app-gateway.participantportal.com"
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
             },
             "client": {
                 "restApiBaseLink": "https://client-uat.participantportal.com/acclaim",
-                "microServiceApiBaseLink": "https://np-app-gateway.participantportal.com"
+                "microServiceApiBaseLink": "https://oci-sajnopmploigext.participantportal.com"
             },
             "stg": {
                 "restApiBaseLink": "https://ent-stg.participantportal.com/acclaim",
